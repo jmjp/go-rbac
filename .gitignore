@@ -1,0 +1,5 @@
+# ignore temp folder
+temp/
+
+# ignore .env file 
+#.env

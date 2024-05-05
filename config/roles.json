@@ -1,0 +1,23 @@
+{
+    "roles": [
+        {
+            "name": "owner",
+            "permissions": [
+                "team::delete::*"
+            ]
+        },
+        {
+            "name": "internal",
+            "permissions": [
+                "team::read::*",
+                "team::create::members"
+            ]
+        },
+        {
+            "name": "external",
+            "permissions": [
+                "team::read::members"
+            ]
+        }
+    ]
+}

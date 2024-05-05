@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/cmd",
+            "envFile": "${workspaceFolder}/.env",
+            "env": {
+                "HOST": "localhost"
+            },
+            "args": [
+                "redirect",
+                "test"
+            ],
+            "showLog": true
+        },
+        {
+            "name": "Run",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "envFile": "${workspaceFolder}/.env",
+            "program": "${workspaceFolder}/cmd/main.go",
+            "buildFlags": [
+            ],
+            "showLog": true
+        }
+    ]
+}
